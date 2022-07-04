@@ -1,1 +1,1 @@
-export const domain =  "https://blogapp-tayyab.herokuapp.com/"
+export const domain =  "https://backend-app-web.herokuapp.com/"

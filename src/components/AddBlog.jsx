@@ -40,15 +40,17 @@ const AddBlog = () => {
       .then(() => navigate("/blogs"));
   };
   return (
-    <div>
+    <div 
+    >
       <form onSubmit={handleSubmit}>
         <Box
-          border={3}
-          borderColor="linear-gradient(90deg, rgba(58,75,180,1) 2%, rgba(116,49,110,1) 36%, rgba(2,0,161,1) 73%, rgba(69,92,252,1) 100%)"
+          border={9}
+          borderColor="linear-gradient(90deg, rgba(78,5,180,1) 12%, rgba(116,49,110,1) 36%, rgba(2,0,161,1) 73%, rgba(69,92,252,1) 100%)"
           borderRadius={10}
           boxShadow="10px 10px 20px #ccc"
           padding={3}
           margin={"auto"}
+          background color="purple"
           marginTop={3}
           display="flex"
           flexDirection={"column"}
@@ -58,25 +60,26 @@ const AddBlog = () => {
             className={classes.font}
             fontWeight={"bold"}
             padding={3}
-            color="grey"
+            color="primary"
             variant="h2"
-            textAlign={"center"}
+            textAlign={"left"}
           >
             Post Your Blog
           </Typography>
-          <InputLabel className={classes.font} sx={labelStyles}>
-            Title
+          <InputLabel className={classes.font} sx={labelStyles} >
+            BLOG TITLE
           </InputLabel>
           <TextField
             className={classes.font}
             name="title"
             onChange={handleChange}
             value={inputs.title}
+            
             margin="auto"
             variant="outlined"
           />
-          <InputLabel className={classes.font} sx={labelStyles}>
-            Description
+          <InputLabel className={classes.font}  sx={labelStyles}>
+          BLOG  DescriptioN 
           </InputLabel>
           <TextField
             className={classes.font}
@@ -87,7 +90,7 @@ const AddBlog = () => {
             variant="outlined"
           />
           <InputLabel className={classes.font} sx={labelStyles}>
-            ImageURL
+           PLEASE PUT YOUR ImageURL
           </InputLabel>
           <TextField
             className={classes.font}
@@ -96,14 +99,15 @@ const AddBlog = () => {
             value={inputs.imageURL}
             margin="auto"
             variant="outlined"
+            
           />
           <Button
-            sx={{ mt: 2, borderRadius: 4 }}
+            sx={{ mt: 9, borderRadius: 9 }}
             variant="contained"
-            color="warning"
+            color="secondary"
             type="submit"
           >
-            Submit
+            Submit your BLOG
           </Button>
         </Box>
       </form>

@@ -101,7 +101,7 @@ const Auth = () => {
               marginTop: 3,
             }}
             color='warning'>
-            Submit{' '}
+            SUBMIT {' '}
           </Button>{' '}
           <Button
             onClick={() => setIsSignup(!isSignup)}

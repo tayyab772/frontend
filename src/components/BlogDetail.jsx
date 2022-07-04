@@ -55,7 +55,13 @@ const BlogDetail = () => {
   };
 
   return (
-    <div>
+    <div
+    
+    sx={{
+    background:
+        "linear-gradient(90deg, rgba(8,red,10,1) 12%, rgba(116,red,11,1) 3%, rgba(2,red,61,1) 3%, rgba(9,92,252,1) 100%)",
+    }}
+    >
       {inputs && (
         <form onSubmit={handleSubmit}>
           <Box
@@ -77,7 +83,7 @@ const BlogDetail = () => {
               variant="h2"
               textAlign={"center"}
             >
-              Post Your Blog
+              PLEASE INSERT OR PUT YOUR BLOG
             </Typography>
             <InputLabel sx={labelStyles}>Title</InputLabel>
             <TextField
@@ -87,7 +93,7 @@ const BlogDetail = () => {
               margin="auto"
               variant="outlined"
             />
-            <InputLabel sx={labelStyles}>Description</InputLabel>
+            <InputLabel sx={labelStyles}>BLOGY EXPLANATION</InputLabel>
             <TextField
               name="description"
               onChange={handleChange}

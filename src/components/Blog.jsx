@@ -42,6 +42,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
           margin: "auto",
           mt: 2,
           padding: 2,
+          color:"purple",
           boxShadow: "5px 5px 10px #ccc",
           ":hover": {
             boxShadow: "10px 10px 20px #ccc",
@@ -51,10 +52,10 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
         {isUser && (
           <Box display="flex">
             <IconButton onClick={handleEdit} sx={{ marginLeft: "auto" }}>
-              <ModeEditOutlineIcon color="warning" />
+              <ModeEditOutlineIcon color="primary" />
             </IconButton>
             <IconButton onClick={handleDelete}>
-              <DeleteForeverIcon color="error" />
+              <DeleteForeverIcon color="secondary" />
             </IconButton>
           </Box>
         )}
@@ -62,7 +63,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
           avatar={
             <Avatar
               className={classes.font}
-              sx={{ bgcolor: "red" }}
+              sx={{ bgcolor: "blue" }}
               aria-label="recipe"
             >
               {userName ? userName.charAt(0) : ""}
